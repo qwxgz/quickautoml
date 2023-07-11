@@ -3,7 +3,6 @@ import pandas as pd
 import os
 
 # Import Profiling capabilities
-import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
 # Import ML things
