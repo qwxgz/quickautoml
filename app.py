@@ -5,8 +5,7 @@ import os
 # Import Profiling capabilities
 # import pandas_profiling
 import ydata_profiling
-import streamlit_pandas_profiling as sp
-# from streamlit_pandas_profiling import st_profile_report
+from streamlit_pandas_profiling import st_profile_report
 
 # Import ML things
 from pycaret.classification import setup, compare_models, pull, save_model
@@ -34,7 +33,7 @@ if choice == "Upload":
 if choice == "Profiling":
     st.title("自动化EDA数据探索分析 Exploratory Data Analysis")
     profile_report = df.profile_report()
-    sp.st_profile_report(profile_report)
+    st_profile_report(profile_report)
     pass
 
 if choice == "AutoML":
